@@ -1,0 +1,11 @@
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\bin\Debug\PAC-MAN.exe.config
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\bin\Debug\PAC-MAN.exe
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\bin\Debug\PAC-MAN.pdb
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.csproj.AssemblyReference.cache
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.csproj.SuggestedBindingRedirects.cache
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC_MAN.PacMan.resources
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC_MAN.Properties.Resources.resources
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.csproj.GenerateResource.cache
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.csproj.CoreCompileInputs.cache
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.exe
+C:\Users\mezeimark01\Documents\PAC-MAN\PAC-MAN\obj\Debug\PAC-MAN.pdb
