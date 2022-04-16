@@ -46,8 +46,6 @@
             this.wall5 = new System.Windows.Forms.PictureBox();
             this.wall4 = new System.Windows.Forms.PictureBox();
             this.wall3 = new System.Windows.Forms.PictureBox();
-            this.wall2 = new System.Windows.Forms.PictureBox();
-            this.wall1 = new System.Windows.Forms.PictureBox();
             this.wall14 = new System.Windows.Forms.PictureBox();
             this.redGhost = new System.Windows.Forms.PictureBox();
             this.pinkGhost = new System.Windows.Forms.PictureBox();
@@ -98,6 +96,9 @@
             this.wall17 = new System.Windows.Forms.PictureBox();
             this.wall18 = new System.Windows.Forms.PictureBox();
             this.EndGame = new System.Windows.Forms.Label();
+            this.vulnerableGhost = new System.Windows.Forms.PictureBox();
+            this.wall1 = new System.Windows.Forms.PictureBox();
+            this.wall2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pac_man)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall15)).BeginInit();
@@ -112,8 +113,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.wall5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wall2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wall1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redGhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkGhost)).BeginInit();
@@ -163,6 +162,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vulnerableGhost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wall1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wall2)).BeginInit();
             this.SuspendLayout();
             // 
             // scoreText
@@ -184,7 +186,7 @@
             // pac_man
             // 
             this.pac_man.Image = global::PAC_MAN.Properties.Resources.right;
-            this.pac_man.Location = new System.Drawing.Point(29, 89);
+            this.pac_man.Location = new System.Drawing.Point(29, 186);
             this.pac_man.Name = "pac_man";
             this.pac_man.Size = new System.Drawing.Size(41, 41);
             this.pac_man.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -305,7 +307,7 @@
             // 
             this.wall5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.wall5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wall5.Location = new System.Drawing.Point(687, 161);
+            this.wall5.Location = new System.Drawing.Point(688, 166);
             this.wall5.Name = "wall5";
             this.wall5.Size = new System.Drawing.Size(22, 114);
             this.wall5.TabIndex = 8;
@@ -316,7 +318,7 @@
             // 
             this.wall4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.wall4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wall4.Location = new System.Drawing.Point(293, 161);
+            this.wall4.Location = new System.Drawing.Point(293, 166);
             this.wall4.Name = "wall4";
             this.wall4.Size = new System.Drawing.Size(22, 114);
             this.wall4.TabIndex = 7;
@@ -333,28 +335,6 @@
             this.wall3.TabIndex = 6;
             this.wall3.TabStop = false;
             this.wall3.Tag = "wall";
-            // 
-            // wall2
-            // 
-            this.wall2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.wall2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wall2.Location = new System.Drawing.Point(792, 146);
-            this.wall2.Name = "wall2";
-            this.wall2.Size = new System.Drawing.Size(22, 220);
-            this.wall2.TabIndex = 5;
-            this.wall2.TabStop = false;
-            this.wall2.Tag = "wall";
-            // 
-            // wall1
-            // 
-            this.wall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.wall1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wall1.Location = new System.Drawing.Point(177, 146);
-            this.wall1.Name = "wall1";
-            this.wall1.Size = new System.Drawing.Size(22, 220);
-            this.wall1.TabIndex = 4;
-            this.wall1.TabStop = false;
-            this.wall1.Tag = "wall";
             // 
             // wall14
             // 
@@ -381,7 +361,7 @@
             // pinkGhost
             // 
             this.pinkGhost.Image = global::PAC_MAN.Properties.Resources.pink_guy;
-            this.pinkGhost.Location = new System.Drawing.Point(482, 98);
+            this.pinkGhost.Location = new System.Drawing.Point(230, 98);
             this.pinkGhost.Name = "pinkGhost";
             this.pinkGhost.Size = new System.Drawing.Size(32, 39);
             this.pinkGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -392,7 +372,7 @@
             // orangeGhost
             // 
             this.orangeGhost.Image = global::PAC_MAN.Properties.Resources.yellow_guy;
-            this.orangeGhost.Location = new System.Drawing.Point(544, 12);
+            this.orangeGhost.Location = new System.Drawing.Point(698, 12);
             this.orangeGhost.Name = "orangeGhost";
             this.orangeGhost.Size = new System.Drawing.Size(32, 39);
             this.orangeGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -900,10 +880,43 @@
             this.EndGame.AutoSize = true;
             this.EndGame.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EndGame.ForeColor = System.Drawing.Color.White;
-            this.EndGame.Location = new System.Drawing.Point(461, 297);
+            this.EndGame.Location = new System.Drawing.Point(443, 297);
             this.EndGame.Name = "EndGame";
             this.EndGame.Size = new System.Drawing.Size(0, 23);
             this.EndGame.TabIndex = 66;
+            // 
+            // vulnerableGhost
+            // 
+            this.vulnerableGhost.Image = global::PAC_MAN.Properties.Resources.vulnerableGhost;
+            this.vulnerableGhost.Location = new System.Drawing.Point(431, 290);
+            this.vulnerableGhost.Name = "vulnerableGhost";
+            this.vulnerableGhost.Size = new System.Drawing.Size(45, 44);
+            this.vulnerableGhost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.vulnerableGhost.TabIndex = 67;
+            this.vulnerableGhost.TabStop = false;
+            this.vulnerableGhost.Tag = "ghost";
+            // 
+            // wall1
+            // 
+            this.wall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.wall1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.wall1.Location = new System.Drawing.Point(177, 147);
+            this.wall1.Name = "wall1";
+            this.wall1.Size = new System.Drawing.Size(22, 219);
+            this.wall1.TabIndex = 68;
+            this.wall1.TabStop = false;
+            this.wall1.Tag = "wall";
+            // 
+            // wall2
+            // 
+            this.wall2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.wall2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.wall2.Location = new System.Drawing.Point(792, 147);
+            this.wall2.Name = "wall2";
+            this.wall2.Size = new System.Drawing.Size(22, 219);
+            this.wall2.TabIndex = 69;
+            this.wall2.TabStop = false;
+            this.wall2.Tag = "wall";
             // 
             // PacMan
             // 
@@ -911,6 +924,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(969, 554);
+            this.Controls.Add(this.wall2);
+            this.Controls.Add(this.wall1);
+            this.Controls.Add(this.vulnerableGhost);
             this.Controls.Add(this.EndGame);
             this.Controls.Add(this.wall18);
             this.Controls.Add(this.wall17);
@@ -972,8 +988,6 @@
             this.Controls.Add(this.wall5);
             this.Controls.Add(this.wall4);
             this.Controls.Add(this.wall3);
-            this.Controls.Add(this.wall2);
-            this.Controls.Add(this.wall1);
             this.Controls.Add(this.wall14);
             this.Controls.Add(this.redGhost);
             this.Controls.Add(this.pinkGhost);
@@ -999,8 +1013,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.wall5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wall2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wall1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redGhost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkGhost)).EndInit();
@@ -1050,6 +1062,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wall18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vulnerableGhost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wall1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wall2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1061,8 +1076,6 @@
         private System.Windows.Forms.PictureBox pinkGhost;
         private System.Windows.Forms.PictureBox redGhost;
         private System.Windows.Forms.PictureBox wall14;
-        private System.Windows.Forms.PictureBox wall1;
-        private System.Windows.Forms.PictureBox wall2;
         private System.Windows.Forms.PictureBox wall3;
         private System.Windows.Forms.PictureBox wall4;
         private System.Windows.Forms.PictureBox wall5;
@@ -1125,6 +1138,9 @@
         private System.Windows.Forms.PictureBox wall17;
         private System.Windows.Forms.PictureBox wall18;
         private System.Windows.Forms.Label EndGame;
+        private System.Windows.Forms.PictureBox vulnerableGhost;
+        private System.Windows.Forms.PictureBox wall1;
+        private System.Windows.Forms.PictureBox wall2;
     }
 }
 
